@@ -1,0 +1,59 @@
+# Как список называется по-человечески. Одна строка — одно имя:
+#
+#     идентификатор | Название
+#
+# Идентификатор — тот же, что в lists.json: `приставка:имя` для чужого набора (приставка
+# задаётся в sources.txt) или просто `имя`, если правило про любой источник. Для СВОИХ
+# списков имя берётся из шапки самого файла (`# name:`), и сюда его писать не нужно.
+#
+# ЗАЧЕМ ОТДЕЛЬНЫМ ФАЙЛОМ. Состав наборов у издателей меняется чаще, чем код вокруг них:
+# добавить перевод названия — это правка данных, а не программы. Чего здесь нет, то
+# называется именем файла набора — и это честно: придумывать перевод за издателя мы не
+# вправе, а английское имя человек узнает.
+
+# itdoginfo/allow-domains
+itdog:anime | Аниме
+itdog:block | Заблокированное в РФ
+itdog:cloudflare | Cloudflare
+itdog:cloudfront | Amazon CloudFront
+itdog:digitalocean | DigitalOcean
+itdog:discord | Discord
+itdog:geoblock | Геоблокировка (не пускают из РФ)
+itdog:google_ai | Google AI
+itdog:google_meet | Google Meet
+itdog:google_play | Google Play
+itdog:hdrezka | HDRezka
+itdog:hetzner | Hetzner
+itdog:hodca | H.O.D.C.A (Hetzner, OVH, DigitalOcean, Cloudflare, AWS, Akamai)
+itdog:meta | Meta (Facebook, Instagram)
+itdog:news | Новости
+itdog:ovh | OVH
+itdog:porn | Взрослое
+itdog:roblox | Roblox
+itdog:russia_inside | Россия: изнутри (сборный)
+itdog:russia_outside | Россия: снаружи (сборный)
+itdog:telegram | Telegram
+itdog:tiktok | TikTok
+itdog:twitter | Twitter (X)
+itdog:ukraine_inside | Украина: заблокированное
+itdog:youtube | YouTube
+
+# Greeg0ry/b4geoip-forkop — игры и сервисы
+games:adobe | Adobe
+games:anthropic | Anthropic (Claude)
+games:apple | Apple
+games:blizzard | Blizzard
+games:bungie | Bungie (Destiny)
+games:ccp | CCP (EVE Online)
+games:electronicarts | Electronic Arts
+games:epicgames | Epic Games
+games:google | Google
+games:nintendo | Nintendo
+games:play2go | Play2Go
+games:riot | Riot Games
+games:sony | Sony (PlayStation)
+games:taketwo | Take-Two (Rockstar)
+games:ubisoft | Ubisoft
+games:valve | Valve (Steam)
+games:wargaming | Wargaming
+games:xbox | Xbox

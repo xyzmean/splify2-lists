@@ -48,51 +48,27 @@ UA = {"User-Agent": "splify2-lists build"}
 # Человеческие названия для тех чужих наборов, которые мы знаем в лицо. Всё, чего здесь
 # нет, называется по имени файла — это не беда, а честность: придумывать перевод за
 # издателя мы не вправе, а увидев английское имя, человек его узнает.
-TITLES = {
-    "anime": "Аниме",
-    "block": "Заблокированное в РФ",
-    "cloudflare": "Cloudflare",
-    "cloudfront": "Amazon CloudFront",
-    "digitalocean": "DigitalOcean",
-    "discord": "Discord",
-    "geoblock": "Геоблокировка (не пускают из РФ)",
-    "google_ai": "Google AI",
-    "google_meet": "Google Meet",
-    "google_play": "Google Play",
-    "hdrezka": "HDRezka",
-    "hetzner": "Hetzner",
-    "hodca": "H.O.D.C.A (Hetzner, OVH, DigitalOcean, Cloudflare, AWS, Akamai)",
-    "meta": "Meta (Facebook, Instagram)",
-    "news": "Новости",
-    "ovh": "OVH",
-    "porn": "Взрослое",
-    "roblox": "Roblox",
-    "russia_inside": "Россия: изнутри (сборный)",
-    "russia_outside": "Россия: снаружи (сборный)",
-    "telegram": "Telegram",
-    "tiktok": "TikTok",
-    "twitter": "Twitter (X)",
-    "ukraine_inside": "Украина: заблокированное",
-    "youtube": "YouTube",
-    "adobe": "Adobe",
-    "anthropic": "Anthropic (Claude)",
-    "apple": "Apple",
-    "blizzard": "Blizzard",
-    "bungie": "Bungie (Destiny)",
-    "ccp": "CCP (EVE Online)",
-    "electronicarts": "Electronic Arts",
-    "epicgames": "Epic Games",
-    "google": "Google",
-    "nintendo": "Nintendo",
-    "play2go": "Play2Go",
-    "riot": "Riot Games",
-    "sony": "Sony (PlayStation)",
-    "taketwo": "Take-Two (Rockstar)",
-    "ubisoft": "Ubisoft",
-    "valve": "Valve (Steam)",
-    "wargaming": "Wargaming",
-    "xbox": "Xbox",
-}
+NAMES = os.path.join(ROOT, "names.txt")
+
+
+def read_names():
+    """Человеческие названия — из names.txt, а не из словаря в коде.
+
+    Состав наборов у издателей меняется чаще, чем код вокруг них: добавить перевод должно
+    быть правкой данных. Ключ — тот же идентификатор, что в lists.json (`itdog:telegram`),
+    либо голое имя набора: тогда правило действует у любого источника. Чего в файле нет, то
+    называется именем файла набора — придумывать перевод за издателя мы не вправе.
+    """
+    out = {}
+    if not os.path.exists(NAMES):
+        return out
+    for ln in open(NAMES, encoding="utf-8").read().splitlines():
+        s = ln.strip()
+        if not s or s.startswith("#") or "|" not in s:
+            continue
+        k, v = s.split("|", 1)
+        out[k.strip()] = v.strip()
+    return out
 
 
 def say(msg):
@@ -263,6 +239,7 @@ def upstream_lists(repo, prefix, title):
     Где `.mrs` нет вовсе (другой издатель), объявляем обе половины: пустую splify2 назовёт
     сам, разобрав набор движком, — а промолчать о существующей половине хуже.
     """
+    titles = read_names()
     rel = gh_json("/repos/%s/releases/latest" % repo)
     tag = rel.get("tag_name", "")
     assets = {a["name"]: a["browser_download_url"] for a in rel.get("assets", [])}
@@ -273,20 +250,31 @@ def upstream_lists(repo, prefix, title):
             continue
         base = aname[:-4]
         lid = "%s:%s" % (prefix, base)
-        name = TITLES.get(base, base.replace("_", " ").title())
+        name = titles.get(lid) or titles.get(base) or base.replace("_", " ").title()
         url = assets[aname]
         want_pref = (not has_mrs) or ("%s_ipcidr.mrs" % base in assets)
         common = {
             "format": "srs", "url": url, "tag": tag,
             "source": repo, "source_name": title, "default_on": False,
         }
+        # ИМЯ ПОЛОВИНЫ НА ДИСКЕ — ОТ НАБОРА: `telegram.srs.lst`, а не `telegram.lst`.
+        #
+        # Качается `.srs`, а на диск роутера ложится текстовый список: движок держит в спеке
+        # именно списки, набор ему нужен только чтобы их получить. Пока половина называлась
+        # `telegram.lst`, в спеке и в журнале не было видно, откуда она взялась, — и по имени
+        # файла её нельзя было отличить от плоского списка, скачанного по base_url. Теперь
+        # происхождение читается прямо в правиле (решение владельца).
+        #
+        # Точка в имени заодно разводит эти файлы со вторым издателем, зашитым в пакет: его
+        # разбор путей (`ad_service_of`) имён с точкой не принимает, поэтому `itdog/x.srs.lst`
+        # он не спутает со своим `itdog/x.lst`.
         if want_pref:
-            c = {"id": lid, "name_ru": name, "file": "%s/%s.lst" % (prefix, base)}
+            c = {"id": lid, "name_ru": name, "file": "%s/%s.srs.lst" % (prefix, base)}
             c.update(common)
             cats.append(c)
         d = {"id": ("svc_%s_%s" % (prefix, base)) if want_pref else lid,
              "kind": "domains", "name_ru": name,
-             "file": "%s/domains/%s.lst" % (prefix, base)}
+             "file": "%s/domains/%s.srs.lst" % (prefix, base)}
         d.update(common)
         if want_pref:
             d["same_as_ip"] = [lid]

@@ -34,6 +34,8 @@ uci commit splify2
    Подробности и шапка файла — в [`lists/README.md`](lists/README.md).
 
 2. **Добавить или убрать чужой источник** — строка в [`sources.txt`](sources.txt).
+   Название набора по-человечески — строка в [`names.txt`](names.txt); чего там нет, то
+   называется именем файла набора.
 
 3. **Ничего больше.** Сборка идёт раз в сутки сама (`.github/workflows/lists.yml`), а
    `lists.json` обновляется, только если содержимое действительно изменилось.
@@ -79,19 +81,22 @@ python3 build.py     # зависимостей нет, только Python 3.8+
   "categories": [                        // списки ПОДСЕТЕЙ
     { "id": "example", "name_ru": "Пример", "file": "example.lst",
       "count": 1, "default_on": false },
-    { "id": "itdog:telegram", "name_ru": "Telegram", "file": "itdog/telegram.lst",
+    { "id": "itdog:telegram", "name_ru": "Telegram", "file": "itdog/telegram.srs.lst",
       "format": "srs", "tag": "2026-09-07_14-23",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/telegram.srs" }
   ],
   "domain_lists": [                      // списки ДОМЕНОВ
     { "id": "svc_itdog_telegram", "kind": "domains", "name_ru": "Telegram",
-      "file": "itdog/domains/telegram.lst", "same_as_ip": ["itdog:telegram"],
+      "file": "itdog/domains/telegram.srs.lst", "same_as_ip": ["itdog:telegram"],
       "format": "srs", "url": "…", "tag": "…" }
   ]
 }
 ```
 
-- **`file`** — путь на роутере и, для своих списков, путь относительно `base_url`.
+- **`file`** — имя половины НА РОУТЕРЕ (и, для своих списков, путь относительно `base_url`).
+  Качается `.srs`, а движок держит в спеке текстовые списки: набор ему нужен только чтобы их
+  получить. Поэтому у половин чужого набора имя от набора — `telegram.srs.lst`: происхождение
+  списка читается прямо в правиле.
 - **`format: "srs"` и `url`** — «скачай вот это и разложи набором sing-box». Без них список
   скачивается как обычный текстовый файл из `base_url`.
 - **`same_as_ip`** — «домены и подсети здесь про одно и то же»: splify2 показывает такую пару
