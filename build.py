@@ -224,20 +224,27 @@ def read_sources():
         repo = parts[0]
         prefix = parts[1] if len(parts) > 1 and parts[1] else repo.split("/")[0]
         title = parts[2] if len(parts) > 2 and parts[2] else repo
-        out.append((repo, prefix, title))
+        kinds = (parts[3] if len(parts) > 3 and parts[3] else "auto").lower()
+        if kinds not in ("auto", "both", "prefixes", "domains"):
+            say("  %s: непонятные виды «%s» — считаю auto" % (repo, kinds))
+            kinds = "auto"
+        out.append((repo, prefix, title, kinds))
     return out
 
 
-def upstream_lists(repo, prefix, title):
+def upstream_lists(repo, prefix, title, kinds="auto"):
     """Наборы .srs из последнего релиза чужого репозитория.
 
     ТЕГ ЗАПИСЫВАЕТСЯ В ССЫЛКУ, а не берётся как `latest`: две сборки одного lists.json
     обязаны означать одно и то же, иначе «у меня вчера работало» не с чем сравнить.
 
-    ЕСТЬ ЛИ У НАБОРА ПОДСЕТИ — подсказка, а не истина. У itdoginfo рядом с `.srs` лежат
-    `.mrs` для mihomo, и по наличию `<имя>_ipcidr.mrs` видно, что подсети в наборе есть.
-    Где `.mrs` нет вовсе (другой издатель), объявляем обе половины: пустую splify2 назовёт
-    сам, разобрав набор движком, — а промолчать о существующей половине хуже.
+    ЧТО В НАБОРЕ — ДОМЕНЫ ИЛИ ПОДСЕТИ. Объявить половину, которой в наборе нет, нельзя:
+    правило ссылается на два файла, один из них не появится никогда, и канал не поднимется
+    ВОВСЕ. Так и вышло с наборами b4geoip — они только адресные.
+
+    У itdoginfo рядом с `.srs` лежат `.mrs` для mihomo, и по ним обе половины видны:
+    `<имя>_domain.mrs` и `<имя>_ipcidr.mrs`. Где `.mrs` нет, угадывать нечем — тогда виды
+    называет sources.txt четвёртым полем.
     """
     titles = read_names()
     rel = gh_json("/repos/%s/releases/latest" % repo)
@@ -252,7 +259,15 @@ def upstream_lists(repo, prefix, title):
         lid = "%s:%s" % (prefix, base)
         name = titles.get(lid) or titles.get(base) or base.replace("_", " ").title()
         url = assets[aname]
-        want_pref = (not has_mrs) or ("%s_ipcidr.mrs" % base in assets)
+        if kinds == "auto" and has_mrs:
+            want_pref = "%s_ipcidr.mrs" % base in assets
+            want_dom = "%s_domain.mrs" % base in assets
+        else:
+            k = "both" if kinds == "auto" else kinds
+            want_pref = k in ("both", "prefixes")
+            want_dom = k in ("both", "domains")
+        if not want_pref and not want_dom:
+            continue
         common = {
             "format": "srs", "url": url, "tag": tag,
             "source": repo, "source_name": title, "default_on": False,
@@ -272,13 +287,14 @@ def upstream_lists(repo, prefix, title):
             c = {"id": lid, "name_ru": name, "file": "%s/%s.srs.lst" % (prefix, base)}
             c.update(common)
             cats.append(c)
-        d = {"id": ("svc_%s_%s" % (prefix, base)) if want_pref else lid,
-             "kind": "domains", "name_ru": name,
-             "file": "%s/domains/%s.srs.lst" % (prefix, base)}
-        d.update(common)
-        if want_pref:
-            d["same_as_ip"] = [lid]
-        doms.append(d)
+        if want_dom:
+            d = {"id": ("svc_%s_%s" % (prefix, base)) if want_pref else lid,
+                 "kind": "domains", "name_ru": name,
+                 "file": "%s/domains/%s.srs.lst" % (prefix, base)}
+            d.update(common)
+            if want_pref:
+                d["same_as_ip"] = [lid]
+            doms.append(d)
     say("  %s: релиз %s, наборов %d" % (repo, tag, len(cats) + len(doms)))
     return cats, doms
 
@@ -306,9 +322,9 @@ def main():
     say("свои списки:")
     cats, doms = own_lists()
     say("чужие релизы:")
-    for repo, prefix, title in read_sources():
+    for repo, prefix, title, kinds in read_sources():
         try:
-            c, d = upstream_lists(repo, prefix, title)
+            c, d = upstream_lists(repo, prefix, title, kinds)
         except Exception as e:  # noqa: BLE001
             # Недоступный источник не роняет сборку: лучше lists.json без него, чем
             # никакого. Молчать при этом нельзя — иначе список исчезнет незаметно.
