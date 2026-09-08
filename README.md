@@ -56,10 +56,12 @@ python3 build.py     # зависимостей нет, только Python 3.8+
 
 | Источник | Что даёт | Приставка |
 |---|---|---|
-| [itdoginfo/allow-domains](https://github.com/itdoginfo/allow-domains) | сервисы и категории под РФ | `itdog:` |
-| [Greeg0ry/b4geoip-forkop](https://github.com/Greeg0ry/b4geoip-forkop) | игры и игровые сервисы | `games:` |
+| [itdoginfo/allow-domains](https://github.com/itdoginfo/allow-domains) | сервисы и категории под РФ | `itdoginfo:` |
+| [Greeg0ry/b4geoip-forkop](https://github.com/Greeg0ry/b4geoip-forkop) | игры и игровые сервисы | `b4geoip:` |
 
-Приставка нужна потому, что имена у источников совпадают: `roblox` есть и там, и там.
+Приставка нужна по двум причинам: имена у источников совпадают (`roblox` есть и там, и там), и
+приставка `itdog` уже занята вторым издателем, зашитым в сам splify2 — с ней он забирал бы
+списки этого каталога себе и качал их своим, зафиксированным в пакете тегом.
 
 **Тег релиза записывается в ссылку.** Не `latest`: две сборки одного `lists.json` обязаны
 означать одно и то же, иначе «вчера работало, сегодня нет» не с чем сравнить. Пока у чужого
@@ -81,13 +83,13 @@ python3 build.py     # зависимостей нет, только Python 3.8+
   "categories": [                        // списки ПОДСЕТЕЙ
     { "id": "example", "name_ru": "Пример", "file": "example.lst",
       "count": 1, "default_on": false },
-    { "id": "itdog:telegram", "name_ru": "Telegram", "file": "itdog/telegram.srs.lst",
+    { "id": "itdoginfo:telegram", "name_ru": "Telegram", "file": "itdoginfo/telegram.srs.lst",
       "format": "srs", "tag": "2026-09-07_14-23",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/telegram.srs" }
   ],
   "domain_lists": [                      // списки ДОМЕНОВ
-    { "id": "svc_itdog_telegram", "kind": "domains", "name_ru": "Telegram",
-      "file": "itdog/domains/telegram.srs.lst", "same_as_ip": ["itdog:telegram"],
+    { "id": "svc_itdoginfo_telegram", "kind": "domains", "name_ru": "Telegram",
+      "file": "itdoginfo/domains/telegram.srs.lst", "same_as_ip": ["itdoginfo:telegram"],
       "format": "srs", "url": "…", "tag": "…" }
   ]
 }

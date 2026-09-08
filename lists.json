@@ -1,6 +1,6 @@
 {
-  "version": "2026-09-08_21-01",
-  "generated_at": "2026-09-08T21:01:37Z",
+  "version": "2026-09-08_21-14",
+  "generated_at": "2026-09-08T21:14:52Z",
   "base_url": "https://raw.githubusercontent.com/xyzmean/splify2-lists/main/lists",
   "categories": [
     {
@@ -20,9 +20,9 @@
       "description_ru": "Файл-образец: подсети RIPE NCC — их немного, и файл видно целиком."
     },
     {
-      "id": "itdog:cloudflare",
+      "id": "itdoginfo:cloudflare",
       "name_ru": "Cloudflare",
-      "file": "itdog/cloudflare.srs.lst",
+      "file": "itdoginfo/cloudflare.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/cloudflare.srs",
       "tag": "2026-09-07_14-23",
@@ -31,9 +31,9 @@
       "default_on": false
     },
     {
-      "id": "itdog:cloudfront",
+      "id": "itdoginfo:cloudfront",
       "name_ru": "Amazon CloudFront",
-      "file": "itdog/cloudfront.srs.lst",
+      "file": "itdoginfo/cloudfront.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/cloudfront.srs",
       "tag": "2026-09-07_14-23",
@@ -42,9 +42,9 @@
       "default_on": false
     },
     {
-      "id": "itdog:digitalocean",
+      "id": "itdoginfo:digitalocean",
       "name_ru": "DigitalOcean",
-      "file": "itdog/digitalocean.srs.lst",
+      "file": "itdoginfo/digitalocean.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/digitalocean.srs",
       "tag": "2026-09-07_14-23",
@@ -53,9 +53,9 @@
       "default_on": false
     },
     {
-      "id": "itdog:discord",
+      "id": "itdoginfo:discord",
       "name_ru": "Discord",
-      "file": "itdog/discord.srs.lst",
+      "file": "itdoginfo/discord.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/discord.srs",
       "tag": "2026-09-07_14-23",
@@ -64,9 +64,9 @@
       "default_on": false
     },
     {
-      "id": "itdog:google_meet",
+      "id": "itdoginfo:google_meet",
       "name_ru": "Google Meet",
-      "file": "itdog/google_meet.srs.lst",
+      "file": "itdoginfo/google_meet.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/google_meet.srs",
       "tag": "2026-09-07_14-23",
@@ -75,9 +75,9 @@
       "default_on": false
     },
     {
-      "id": "itdog:hetzner",
+      "id": "itdoginfo:hetzner",
       "name_ru": "Hetzner",
-      "file": "itdog/hetzner.srs.lst",
+      "file": "itdoginfo/hetzner.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/hetzner.srs",
       "tag": "2026-09-07_14-23",
@@ -86,9 +86,9 @@
       "default_on": false
     },
     {
-      "id": "itdog:meta",
+      "id": "itdoginfo:meta",
       "name_ru": "Meta (Facebook, Instagram)",
-      "file": "itdog/meta.srs.lst",
+      "file": "itdoginfo/meta.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/meta.srs",
       "tag": "2026-09-07_14-23",
@@ -97,9 +97,9 @@
       "default_on": false
     },
     {
-      "id": "itdog:ovh",
+      "id": "itdoginfo:ovh",
       "name_ru": "OVH",
-      "file": "itdog/ovh.srs.lst",
+      "file": "itdoginfo/ovh.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/ovh.srs",
       "tag": "2026-09-07_14-23",
@@ -108,9 +108,9 @@
       "default_on": false
     },
     {
-      "id": "itdog:roblox",
+      "id": "itdoginfo:roblox",
       "name_ru": "Roblox",
-      "file": "itdog/roblox.srs.lst",
+      "file": "itdoginfo/roblox.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/roblox.srs",
       "tag": "2026-09-07_14-23",
@@ -119,9 +119,9 @@
       "default_on": false
     },
     {
-      "id": "itdog:telegram",
+      "id": "itdoginfo:telegram",
       "name_ru": "Telegram",
-      "file": "itdog/telegram.srs.lst",
+      "file": "itdoginfo/telegram.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/telegram.srs",
       "tag": "2026-09-07_14-23",
@@ -130,9 +130,9 @@
       "default_on": false
     },
     {
-      "id": "itdog:twitter",
+      "id": "itdoginfo:twitter",
       "name_ru": "Twitter (X)",
-      "file": "itdog/twitter.srs.lst",
+      "file": "itdoginfo/twitter.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/twitter.srs",
       "tag": "2026-09-07_14-23",
@@ -141,210 +141,210 @@
       "default_on": false
     },
     {
-      "id": "games:adobe",
+      "id": "b4geoip:adobe",
       "name_ru": "Adobe",
-      "file": "games/adobe.srs.lst",
+      "file": "b4geoip/adobe.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/adobe.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/adobe.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false
     },
     {
-      "id": "games:anthropic",
+      "id": "b4geoip:anthropic",
       "name_ru": "Anthropic (Claude)",
-      "file": "games/anthropic.srs.lst",
+      "file": "b4geoip/anthropic.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/anthropic.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/anthropic.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false
     },
     {
-      "id": "games:apple",
+      "id": "b4geoip:apple",
       "name_ru": "Apple",
-      "file": "games/apple.srs.lst",
+      "file": "b4geoip/apple.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/apple.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/apple.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false
     },
     {
-      "id": "games:blizzard",
+      "id": "b4geoip:blizzard",
       "name_ru": "Blizzard",
-      "file": "games/blizzard.srs.lst",
+      "file": "b4geoip/blizzard.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/blizzard.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/blizzard.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false
     },
     {
-      "id": "games:bungie",
+      "id": "b4geoip:bungie",
       "name_ru": "Bungie (Destiny)",
-      "file": "games/bungie.srs.lst",
+      "file": "b4geoip/bungie.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/bungie.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/bungie.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false
     },
     {
-      "id": "games:ccp",
+      "id": "b4geoip:ccp",
       "name_ru": "CCP (EVE Online)",
-      "file": "games/ccp.srs.lst",
+      "file": "b4geoip/ccp.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/ccp.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/ccp.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false
     },
     {
-      "id": "games:electronicarts",
+      "id": "b4geoip:electronicarts",
       "name_ru": "Electronic Arts",
-      "file": "games/electronicarts.srs.lst",
+      "file": "b4geoip/electronicarts.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/electronicarts.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/electronicarts.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false
     },
     {
-      "id": "games:epicgames",
+      "id": "b4geoip:epicgames",
       "name_ru": "Epic Games",
-      "file": "games/epicgames.srs.lst",
+      "file": "b4geoip/epicgames.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/epicgames.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/epicgames.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false
     },
     {
-      "id": "games:google",
+      "id": "b4geoip:google",
       "name_ru": "Google",
-      "file": "games/google.srs.lst",
+      "file": "b4geoip/google.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/google.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/google.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false
     },
     {
-      "id": "games:nintendo",
+      "id": "b4geoip:nintendo",
       "name_ru": "Nintendo",
-      "file": "games/nintendo.srs.lst",
+      "file": "b4geoip/nintendo.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/nintendo.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/nintendo.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false
     },
     {
-      "id": "games:play2go",
+      "id": "b4geoip:play2go",
       "name_ru": "Play2Go",
-      "file": "games/play2go.srs.lst",
+      "file": "b4geoip/play2go.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/play2go.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/play2go.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false
     },
     {
-      "id": "games:riot",
+      "id": "b4geoip:riot",
       "name_ru": "Riot Games",
-      "file": "games/riot.srs.lst",
+      "file": "b4geoip/riot.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/riot.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/riot.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false
     },
     {
-      "id": "games:roblox",
+      "id": "b4geoip:roblox",
       "name_ru": "Roblox",
-      "file": "games/roblox.srs.lst",
+      "file": "b4geoip/roblox.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/roblox.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/roblox.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false
     },
     {
-      "id": "games:sony",
+      "id": "b4geoip:sony",
       "name_ru": "Sony (PlayStation)",
-      "file": "games/sony.srs.lst",
+      "file": "b4geoip/sony.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/sony.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/sony.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false
     },
     {
-      "id": "games:taketwo",
+      "id": "b4geoip:taketwo",
       "name_ru": "Take-Two (Rockstar)",
-      "file": "games/taketwo.srs.lst",
+      "file": "b4geoip/taketwo.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/taketwo.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/taketwo.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false
     },
     {
-      "id": "games:ubisoft",
+      "id": "b4geoip:ubisoft",
       "name_ru": "Ubisoft",
-      "file": "games/ubisoft.srs.lst",
+      "file": "b4geoip/ubisoft.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/ubisoft.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/ubisoft.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false
     },
     {
-      "id": "games:valve",
+      "id": "b4geoip:valve",
       "name_ru": "Valve (Steam)",
-      "file": "games/valve.srs.lst",
+      "file": "b4geoip/valve.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/valve.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/valve.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false
     },
     {
-      "id": "games:wargaming",
+      "id": "b4geoip:wargaming",
       "name_ru": "Wargaming",
-      "file": "games/wargaming.srs.lst",
+      "file": "b4geoip/wargaming.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/wargaming.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/wargaming.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false
     },
     {
-      "id": "games:xbox",
+      "id": "b4geoip:xbox",
       "name_ru": "Xbox",
-      "file": "games/xbox.srs.lst",
+      "file": "b4geoip/xbox.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/xbox.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/xbox.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false
@@ -364,10 +364,10 @@
       ]
     },
     {
-      "id": "itdog:anime",
+      "id": "itdoginfo:anime",
       "kind": "domains",
       "name_ru": "Аниме",
-      "file": "itdog/domains/anime.srs.lst",
+      "file": "itdoginfo/domains/anime.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/anime.srs",
       "tag": "2026-09-07_14-23",
@@ -376,10 +376,10 @@
       "default_on": false
     },
     {
-      "id": "itdog:block",
+      "id": "itdoginfo:block",
       "kind": "domains",
       "name_ru": "Заблокированное в РФ",
-      "file": "itdog/domains/block.srs.lst",
+      "file": "itdoginfo/domains/block.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/block.srs",
       "tag": "2026-09-07_14-23",
@@ -388,10 +388,10 @@
       "default_on": false
     },
     {
-      "id": "svc_itdog_cloudflare",
+      "id": "svc_itdoginfo_cloudflare",
       "kind": "domains",
       "name_ru": "Cloudflare",
-      "file": "itdog/domains/cloudflare.srs.lst",
+      "file": "itdoginfo/domains/cloudflare.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/cloudflare.srs",
       "tag": "2026-09-07_14-23",
@@ -399,14 +399,14 @@
       "source_name": "itdoginfo (allow-domains)",
       "default_on": false,
       "same_as_ip": [
-        "itdog:cloudflare"
+        "itdoginfo:cloudflare"
       ]
     },
     {
-      "id": "svc_itdog_cloudfront",
+      "id": "svc_itdoginfo_cloudfront",
       "kind": "domains",
       "name_ru": "Amazon CloudFront",
-      "file": "itdog/domains/cloudfront.srs.lst",
+      "file": "itdoginfo/domains/cloudfront.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/cloudfront.srs",
       "tag": "2026-09-07_14-23",
@@ -414,14 +414,14 @@
       "source_name": "itdoginfo (allow-domains)",
       "default_on": false,
       "same_as_ip": [
-        "itdog:cloudfront"
+        "itdoginfo:cloudfront"
       ]
     },
     {
-      "id": "svc_itdog_digitalocean",
+      "id": "svc_itdoginfo_digitalocean",
       "kind": "domains",
       "name_ru": "DigitalOcean",
-      "file": "itdog/domains/digitalocean.srs.lst",
+      "file": "itdoginfo/domains/digitalocean.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/digitalocean.srs",
       "tag": "2026-09-07_14-23",
@@ -429,14 +429,14 @@
       "source_name": "itdoginfo (allow-domains)",
       "default_on": false,
       "same_as_ip": [
-        "itdog:digitalocean"
+        "itdoginfo:digitalocean"
       ]
     },
     {
-      "id": "svc_itdog_discord",
+      "id": "svc_itdoginfo_discord",
       "kind": "domains",
       "name_ru": "Discord",
-      "file": "itdog/domains/discord.srs.lst",
+      "file": "itdoginfo/domains/discord.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/discord.srs",
       "tag": "2026-09-07_14-23",
@@ -444,14 +444,14 @@
       "source_name": "itdoginfo (allow-domains)",
       "default_on": false,
       "same_as_ip": [
-        "itdog:discord"
+        "itdoginfo:discord"
       ]
     },
     {
-      "id": "itdog:geoblock",
+      "id": "itdoginfo:geoblock",
       "kind": "domains",
       "name_ru": "Геоблокировка (не пускают из РФ)",
-      "file": "itdog/domains/geoblock.srs.lst",
+      "file": "itdoginfo/domains/geoblock.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/geoblock.srs",
       "tag": "2026-09-07_14-23",
@@ -460,10 +460,10 @@
       "default_on": false
     },
     {
-      "id": "itdog:google_ai",
+      "id": "itdoginfo:google_ai",
       "kind": "domains",
       "name_ru": "Google AI",
-      "file": "itdog/domains/google_ai.srs.lst",
+      "file": "itdoginfo/domains/google_ai.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/google_ai.srs",
       "tag": "2026-09-07_14-23",
@@ -472,10 +472,10 @@
       "default_on": false
     },
     {
-      "id": "svc_itdog_google_meet",
+      "id": "svc_itdoginfo_google_meet",
       "kind": "domains",
       "name_ru": "Google Meet",
-      "file": "itdog/domains/google_meet.srs.lst",
+      "file": "itdoginfo/domains/google_meet.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/google_meet.srs",
       "tag": "2026-09-07_14-23",
@@ -483,14 +483,14 @@
       "source_name": "itdoginfo (allow-domains)",
       "default_on": false,
       "same_as_ip": [
-        "itdog:google_meet"
+        "itdoginfo:google_meet"
       ]
     },
     {
-      "id": "itdog:google_play",
+      "id": "itdoginfo:google_play",
       "kind": "domains",
       "name_ru": "Google Play",
-      "file": "itdog/domains/google_play.srs.lst",
+      "file": "itdoginfo/domains/google_play.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/google_play.srs",
       "tag": "2026-09-07_14-23",
@@ -499,10 +499,10 @@
       "default_on": false
     },
     {
-      "id": "itdog:hdrezka",
+      "id": "itdoginfo:hdrezka",
       "kind": "domains",
       "name_ru": "HDRezka",
-      "file": "itdog/domains/hdrezka.srs.lst",
+      "file": "itdoginfo/domains/hdrezka.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/hdrezka.srs",
       "tag": "2026-09-07_14-23",
@@ -511,10 +511,10 @@
       "default_on": false
     },
     {
-      "id": "svc_itdog_hetzner",
+      "id": "svc_itdoginfo_hetzner",
       "kind": "domains",
       "name_ru": "Hetzner",
-      "file": "itdog/domains/hetzner.srs.lst",
+      "file": "itdoginfo/domains/hetzner.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/hetzner.srs",
       "tag": "2026-09-07_14-23",
@@ -522,14 +522,14 @@
       "source_name": "itdoginfo (allow-domains)",
       "default_on": false,
       "same_as_ip": [
-        "itdog:hetzner"
+        "itdoginfo:hetzner"
       ]
     },
     {
-      "id": "itdog:hodca",
+      "id": "itdoginfo:hodca",
       "kind": "domains",
       "name_ru": "H.O.D.C.A (Hetzner, OVH, DigitalOcean, Cloudflare, AWS, Akamai)",
-      "file": "itdog/domains/hodca.srs.lst",
+      "file": "itdoginfo/domains/hodca.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/hodca.srs",
       "tag": "2026-09-07_14-23",
@@ -538,10 +538,10 @@
       "default_on": false
     },
     {
-      "id": "svc_itdog_meta",
+      "id": "svc_itdoginfo_meta",
       "kind": "domains",
       "name_ru": "Meta (Facebook, Instagram)",
-      "file": "itdog/domains/meta.srs.lst",
+      "file": "itdoginfo/domains/meta.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/meta.srs",
       "tag": "2026-09-07_14-23",
@@ -549,14 +549,14 @@
       "source_name": "itdoginfo (allow-domains)",
       "default_on": false,
       "same_as_ip": [
-        "itdog:meta"
+        "itdoginfo:meta"
       ]
     },
     {
-      "id": "itdog:news",
+      "id": "itdoginfo:news",
       "kind": "domains",
       "name_ru": "Новости",
-      "file": "itdog/domains/news.srs.lst",
+      "file": "itdoginfo/domains/news.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/news.srs",
       "tag": "2026-09-07_14-23",
@@ -565,10 +565,10 @@
       "default_on": false
     },
     {
-      "id": "svc_itdog_ovh",
+      "id": "svc_itdoginfo_ovh",
       "kind": "domains",
       "name_ru": "OVH",
-      "file": "itdog/domains/ovh.srs.lst",
+      "file": "itdoginfo/domains/ovh.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/ovh.srs",
       "tag": "2026-09-07_14-23",
@@ -576,14 +576,14 @@
       "source_name": "itdoginfo (allow-domains)",
       "default_on": false,
       "same_as_ip": [
-        "itdog:ovh"
+        "itdoginfo:ovh"
       ]
     },
     {
-      "id": "itdog:porn",
+      "id": "itdoginfo:porn",
       "kind": "domains",
       "name_ru": "Взрослое",
-      "file": "itdog/domains/porn.srs.lst",
+      "file": "itdoginfo/domains/porn.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/porn.srs",
       "tag": "2026-09-07_14-23",
@@ -592,10 +592,10 @@
       "default_on": false
     },
     {
-      "id": "svc_itdog_roblox",
+      "id": "svc_itdoginfo_roblox",
       "kind": "domains",
       "name_ru": "Roblox",
-      "file": "itdog/domains/roblox.srs.lst",
+      "file": "itdoginfo/domains/roblox.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/roblox.srs",
       "tag": "2026-09-07_14-23",
@@ -603,14 +603,14 @@
       "source_name": "itdoginfo (allow-domains)",
       "default_on": false,
       "same_as_ip": [
-        "itdog:roblox"
+        "itdoginfo:roblox"
       ]
     },
     {
-      "id": "itdog:russia_inside",
+      "id": "itdoginfo:russia_inside",
       "kind": "domains",
       "name_ru": "Россия: изнутри (сборный)",
-      "file": "itdog/domains/russia_inside.srs.lst",
+      "file": "itdoginfo/domains/russia_inside.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/russia_inside.srs",
       "tag": "2026-09-07_14-23",
@@ -619,10 +619,10 @@
       "default_on": false
     },
     {
-      "id": "itdog:russia_outside",
+      "id": "itdoginfo:russia_outside",
       "kind": "domains",
       "name_ru": "Россия: снаружи (сборный)",
-      "file": "itdog/domains/russia_outside.srs.lst",
+      "file": "itdoginfo/domains/russia_outside.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/russia_outside.srs",
       "tag": "2026-09-07_14-23",
@@ -631,10 +631,10 @@
       "default_on": false
     },
     {
-      "id": "svc_itdog_telegram",
+      "id": "svc_itdoginfo_telegram",
       "kind": "domains",
       "name_ru": "Telegram",
-      "file": "itdog/domains/telegram.srs.lst",
+      "file": "itdoginfo/domains/telegram.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/telegram.srs",
       "tag": "2026-09-07_14-23",
@@ -642,14 +642,14 @@
       "source_name": "itdoginfo (allow-domains)",
       "default_on": false,
       "same_as_ip": [
-        "itdog:telegram"
+        "itdoginfo:telegram"
       ]
     },
     {
-      "id": "itdog:tiktok",
+      "id": "itdoginfo:tiktok",
       "kind": "domains",
       "name_ru": "TikTok",
-      "file": "itdog/domains/tiktok.srs.lst",
+      "file": "itdoginfo/domains/tiktok.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/tiktok.srs",
       "tag": "2026-09-07_14-23",
@@ -658,10 +658,10 @@
       "default_on": false
     },
     {
-      "id": "svc_itdog_twitter",
+      "id": "svc_itdoginfo_twitter",
       "kind": "domains",
       "name_ru": "Twitter (X)",
-      "file": "itdog/domains/twitter.srs.lst",
+      "file": "itdoginfo/domains/twitter.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/twitter.srs",
       "tag": "2026-09-07_14-23",
@@ -669,14 +669,14 @@
       "source_name": "itdoginfo (allow-domains)",
       "default_on": false,
       "same_as_ip": [
-        "itdog:twitter"
+        "itdoginfo:twitter"
       ]
     },
     {
-      "id": "itdog:ukraine_inside",
+      "id": "itdoginfo:ukraine_inside",
       "kind": "domains",
       "name_ru": "Украина: заблокированное",
-      "file": "itdog/domains/ukraine_inside.srs.lst",
+      "file": "itdoginfo/domains/ukraine_inside.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/ukraine_inside.srs",
       "tag": "2026-09-07_14-23",
@@ -685,10 +685,10 @@
       "default_on": false
     },
     {
-      "id": "itdog:youtube",
+      "id": "itdoginfo:youtube",
       "kind": "domains",
       "name_ru": "YouTube",
-      "file": "itdog/domains/youtube.srs.lst",
+      "file": "itdoginfo/domains/youtube.srs.lst",
       "format": "srs",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/youtube.srs",
       "tag": "2026-09-07_14-23",
@@ -697,288 +697,288 @@
       "default_on": false
     },
     {
-      "id": "svc_games_adobe",
+      "id": "svc_b4geoip_adobe",
       "kind": "domains",
       "name_ru": "Adobe",
-      "file": "games/domains/adobe.srs.lst",
+      "file": "b4geoip/domains/adobe.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/adobe.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/adobe.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false,
       "same_as_ip": [
-        "games:adobe"
+        "b4geoip:adobe"
       ]
     },
     {
-      "id": "svc_games_anthropic",
+      "id": "svc_b4geoip_anthropic",
       "kind": "domains",
       "name_ru": "Anthropic (Claude)",
-      "file": "games/domains/anthropic.srs.lst",
+      "file": "b4geoip/domains/anthropic.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/anthropic.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/anthropic.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false,
       "same_as_ip": [
-        "games:anthropic"
+        "b4geoip:anthropic"
       ]
     },
     {
-      "id": "svc_games_apple",
+      "id": "svc_b4geoip_apple",
       "kind": "domains",
       "name_ru": "Apple",
-      "file": "games/domains/apple.srs.lst",
+      "file": "b4geoip/domains/apple.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/apple.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/apple.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false,
       "same_as_ip": [
-        "games:apple"
+        "b4geoip:apple"
       ]
     },
     {
-      "id": "svc_games_blizzard",
+      "id": "svc_b4geoip_blizzard",
       "kind": "domains",
       "name_ru": "Blizzard",
-      "file": "games/domains/blizzard.srs.lst",
+      "file": "b4geoip/domains/blizzard.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/blizzard.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/blizzard.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false,
       "same_as_ip": [
-        "games:blizzard"
+        "b4geoip:blizzard"
       ]
     },
     {
-      "id": "svc_games_bungie",
+      "id": "svc_b4geoip_bungie",
       "kind": "domains",
       "name_ru": "Bungie (Destiny)",
-      "file": "games/domains/bungie.srs.lst",
+      "file": "b4geoip/domains/bungie.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/bungie.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/bungie.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false,
       "same_as_ip": [
-        "games:bungie"
+        "b4geoip:bungie"
       ]
     },
     {
-      "id": "svc_games_ccp",
+      "id": "svc_b4geoip_ccp",
       "kind": "domains",
       "name_ru": "CCP (EVE Online)",
-      "file": "games/domains/ccp.srs.lst",
+      "file": "b4geoip/domains/ccp.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/ccp.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/ccp.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false,
       "same_as_ip": [
-        "games:ccp"
+        "b4geoip:ccp"
       ]
     },
     {
-      "id": "svc_games_electronicarts",
+      "id": "svc_b4geoip_electronicarts",
       "kind": "domains",
       "name_ru": "Electronic Arts",
-      "file": "games/domains/electronicarts.srs.lst",
+      "file": "b4geoip/domains/electronicarts.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/electronicarts.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/electronicarts.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false,
       "same_as_ip": [
-        "games:electronicarts"
+        "b4geoip:electronicarts"
       ]
     },
     {
-      "id": "svc_games_epicgames",
+      "id": "svc_b4geoip_epicgames",
       "kind": "domains",
       "name_ru": "Epic Games",
-      "file": "games/domains/epicgames.srs.lst",
+      "file": "b4geoip/domains/epicgames.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/epicgames.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/epicgames.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false,
       "same_as_ip": [
-        "games:epicgames"
+        "b4geoip:epicgames"
       ]
     },
     {
-      "id": "svc_games_google",
+      "id": "svc_b4geoip_google",
       "kind": "domains",
       "name_ru": "Google",
-      "file": "games/domains/google.srs.lst",
+      "file": "b4geoip/domains/google.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/google.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/google.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false,
       "same_as_ip": [
-        "games:google"
+        "b4geoip:google"
       ]
     },
     {
-      "id": "svc_games_nintendo",
+      "id": "svc_b4geoip_nintendo",
       "kind": "domains",
       "name_ru": "Nintendo",
-      "file": "games/domains/nintendo.srs.lst",
+      "file": "b4geoip/domains/nintendo.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/nintendo.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/nintendo.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false,
       "same_as_ip": [
-        "games:nintendo"
+        "b4geoip:nintendo"
       ]
     },
     {
-      "id": "svc_games_play2go",
+      "id": "svc_b4geoip_play2go",
       "kind": "domains",
       "name_ru": "Play2Go",
-      "file": "games/domains/play2go.srs.lst",
+      "file": "b4geoip/domains/play2go.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/play2go.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/play2go.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false,
       "same_as_ip": [
-        "games:play2go"
+        "b4geoip:play2go"
       ]
     },
     {
-      "id": "svc_games_riot",
+      "id": "svc_b4geoip_riot",
       "kind": "domains",
       "name_ru": "Riot Games",
-      "file": "games/domains/riot.srs.lst",
+      "file": "b4geoip/domains/riot.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/riot.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/riot.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false,
       "same_as_ip": [
-        "games:riot"
+        "b4geoip:riot"
       ]
     },
     {
-      "id": "svc_games_roblox",
+      "id": "svc_b4geoip_roblox",
       "kind": "domains",
       "name_ru": "Roblox",
-      "file": "games/domains/roblox.srs.lst",
+      "file": "b4geoip/domains/roblox.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/roblox.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/roblox.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false,
       "same_as_ip": [
-        "games:roblox"
+        "b4geoip:roblox"
       ]
     },
     {
-      "id": "svc_games_sony",
+      "id": "svc_b4geoip_sony",
       "kind": "domains",
       "name_ru": "Sony (PlayStation)",
-      "file": "games/domains/sony.srs.lst",
+      "file": "b4geoip/domains/sony.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/sony.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/sony.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false,
       "same_as_ip": [
-        "games:sony"
+        "b4geoip:sony"
       ]
     },
     {
-      "id": "svc_games_taketwo",
+      "id": "svc_b4geoip_taketwo",
       "kind": "domains",
       "name_ru": "Take-Two (Rockstar)",
-      "file": "games/domains/taketwo.srs.lst",
+      "file": "b4geoip/domains/taketwo.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/taketwo.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/taketwo.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false,
       "same_as_ip": [
-        "games:taketwo"
+        "b4geoip:taketwo"
       ]
     },
     {
-      "id": "svc_games_ubisoft",
+      "id": "svc_b4geoip_ubisoft",
       "kind": "domains",
       "name_ru": "Ubisoft",
-      "file": "games/domains/ubisoft.srs.lst",
+      "file": "b4geoip/domains/ubisoft.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/ubisoft.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/ubisoft.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false,
       "same_as_ip": [
-        "games:ubisoft"
+        "b4geoip:ubisoft"
       ]
     },
     {
-      "id": "svc_games_valve",
+      "id": "svc_b4geoip_valve",
       "kind": "domains",
       "name_ru": "Valve (Steam)",
-      "file": "games/domains/valve.srs.lst",
+      "file": "b4geoip/domains/valve.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/valve.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/valve.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false,
       "same_as_ip": [
-        "games:valve"
+        "b4geoip:valve"
       ]
     },
     {
-      "id": "svc_games_wargaming",
+      "id": "svc_b4geoip_wargaming",
       "kind": "domains",
       "name_ru": "Wargaming",
-      "file": "games/domains/wargaming.srs.lst",
+      "file": "b4geoip/domains/wargaming.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/wargaming.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/wargaming.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false,
       "same_as_ip": [
-        "games:wargaming"
+        "b4geoip:wargaming"
       ]
     },
     {
-      "id": "svc_games_xbox",
+      "id": "svc_b4geoip_xbox",
       "kind": "domains",
       "name_ru": "Xbox",
-      "file": "games/domains/xbox.srs.lst",
+      "file": "b4geoip/domains/xbox.srs.lst",
       "format": "srs",
-      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-08_00-03/xbox.srs",
-      "tag": "2026-09-08_00-03",
+      "url": "https://github.com/Greeg0ry/b4geoip-forkop/releases/download/2026-09-09_00-03/xbox.srs",
+      "tag": "2026-09-09_00-03",
       "source": "Greeg0ry/b4geoip-forkop",
       "source_name": "b4geoip (игры и сервисы)",
       "default_on": false,
       "same_as_ip": [
-        "games:xbox"
+        "b4geoip:xbox"
       ]
     }
   ]

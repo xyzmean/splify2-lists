@@ -12,48 +12,48 @@
 # вправе, а английское имя человек узнает.
 
 # itdoginfo/allow-domains
-itdog:anime | Аниме
-itdog:block | Заблокированное в РФ
-itdog:cloudflare | Cloudflare
-itdog:cloudfront | Amazon CloudFront
-itdog:digitalocean | DigitalOcean
-itdog:discord | Discord
-itdog:geoblock | Геоблокировка (не пускают из РФ)
-itdog:google_ai | Google AI
-itdog:google_meet | Google Meet
-itdog:google_play | Google Play
-itdog:hdrezka | HDRezka
-itdog:hetzner | Hetzner
-itdog:hodca | H.O.D.C.A (Hetzner, OVH, DigitalOcean, Cloudflare, AWS, Akamai)
-itdog:meta | Meta (Facebook, Instagram)
-itdog:news | Новости
-itdog:ovh | OVH
-itdog:porn | Взрослое
-itdog:roblox | Roblox
-itdog:russia_inside | Россия: изнутри (сборный)
-itdog:russia_outside | Россия: снаружи (сборный)
-itdog:telegram | Telegram
-itdog:tiktok | TikTok
-itdog:twitter | Twitter (X)
-itdog:ukraine_inside | Украина: заблокированное
-itdog:youtube | YouTube
+itdoginfo:anime | Аниме
+itdoginfo:block | Заблокированное в РФ
+itdoginfo:cloudflare | Cloudflare
+itdoginfo:cloudfront | Amazon CloudFront
+itdoginfo:digitalocean | DigitalOcean
+itdoginfo:discord | Discord
+itdoginfo:geoblock | Геоблокировка (не пускают из РФ)
+itdoginfo:google_ai | Google AI
+itdoginfo:google_meet | Google Meet
+itdoginfo:google_play | Google Play
+itdoginfo:hdrezka | HDRezka
+itdoginfo:hetzner | Hetzner
+itdoginfo:hodca | H.O.D.C.A (Hetzner, OVH, DigitalOcean, Cloudflare, AWS, Akamai)
+itdoginfo:meta | Meta (Facebook, Instagram)
+itdoginfo:news | Новости
+itdoginfo:ovh | OVH
+itdoginfo:porn | Взрослое
+itdoginfo:roblox | Roblox
+itdoginfo:russia_inside | Россия: изнутри (сборный)
+itdoginfo:russia_outside | Россия: снаружи (сборный)
+itdoginfo:telegram | Telegram
+itdoginfo:tiktok | TikTok
+itdoginfo:twitter | Twitter (X)
+itdoginfo:ukraine_inside | Украина: заблокированное
+itdoginfo:youtube | YouTube
 
 # Greeg0ry/b4geoip-forkop — игры и сервисы
-games:adobe | Adobe
-games:anthropic | Anthropic (Claude)
-games:apple | Apple
-games:blizzard | Blizzard
-games:bungie | Bungie (Destiny)
-games:ccp | CCP (EVE Online)
-games:electronicarts | Electronic Arts
-games:epicgames | Epic Games
-games:google | Google
-games:nintendo | Nintendo
-games:play2go | Play2Go
-games:riot | Riot Games
-games:sony | Sony (PlayStation)
-games:taketwo | Take-Two (Rockstar)
-games:ubisoft | Ubisoft
-games:valve | Valve (Steam)
-games:wargaming | Wargaming
-games:xbox | Xbox
+b4geoip:adobe | Adobe
+b4geoip:anthropic | Anthropic (Claude)
+b4geoip:apple | Apple
+b4geoip:blizzard | Blizzard
+b4geoip:bungie | Bungie (Destiny)
+b4geoip:ccp | CCP (EVE Online)
+b4geoip:electronicarts | Electronic Arts
+b4geoip:epicgames | Epic Games
+b4geoip:google | Google
+b4geoip:nintendo | Nintendo
+b4geoip:play2go | Play2Go
+b4geoip:riot | Riot Games
+b4geoip:sony | Sony (PlayStation)
+b4geoip:taketwo | Take-Two (Rockstar)
+b4geoip:ubisoft | Ubisoft
+b4geoip:valve | Valve (Steam)
+b4geoip:wargaming | Wargaming
+b4geoip:xbox | Xbox
