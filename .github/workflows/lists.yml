@@ -1,0 +1,80 @@
+# Раз в сутки: пересобрать lists.json и, ЕСЛИ ЧТО-ТО ИЗМЕНИЛОСЬ, положить его в релиз.
+#
+# «Если изменилось» решает сама сборка: она сравнивает содержимое без времени и номера
+# версии и не трогает файл, когда сравнение сошлось. Поэтому здесь нет ни одной своей
+# проверки — признаком служит `git status`. Релиз, переизданный без изменений, отменял бы
+# главное свойство версии: одна версия — одно содержимое.
+name: lists
+
+on:
+  schedule:
+    # 03:17 UTC. Не полночь: в полночь начинают сборку все, и общие раннеры ждут очереди.
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    # Правка своего списка или источника — повод пересобрать сразу, а не ждать ночи.
+    paths:
+      - 'lists/**'
+      - 'sources.txt'
+      - 'build.py'
+      - '.github/workflows/lists.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lists
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Собрать lists.json
+        env:
+          # Без токена у GitHub API шестьдесят запросов в час на адрес раннера, и на общем
+          # раннере они выбираются чужими сборками.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 build.py
+
+      - name: Что изменилось
+        id: diff
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "changed=no" >> "$GITHUB_OUTPUT"
+            echo "изменений нет — ни коммита, ни релиза"
+          else
+            echo "changed=yes" >> "$GITHUB_OUTPUT"
+            git status --short
+          fi
+
+      - name: Сохранить в репозиторий
+        if: steps.diff.outputs.changed == 'yes'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Списки: $(python3 -c 'import json;print(json.load(open("lists.json"))["version"])')"
+          git push
+
+      # Релиз ОДИН, с постоянным тегом `lists`, и в нём ровно один файл. Постоянный тег —
+      # ради ссылки, которую человек вписывает в роутер один раз и навсегда; один файл —
+      # потому что всё остальное лежит там, где его ведут, и второй экземпляр списка
+      # означал бы два ответа на вопрос «что сейчас в telegram.srs».
+      - name: Обновить релиз
+        if: steps.diff.outputs.changed == 'yes'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ver="$(python3 -c 'import json;print(json.load(open("lists.json"))["version"])')"
+          if gh release view lists >/dev/null 2>&1; then
+            gh release upload lists lists.json --clobber
+            gh release edit lists --title "Каталог списков $ver"
+          else
+            gh release create lists lists.json \
+              --title "Каталог списков $ver" \
+              --notes "Единственный файл этого релиза — lists.json: перечень списков для splify2. Ссылка для роутера: https://github.com/${{ github.repository }}/releases/latest/download/lists.json"
+          fi
