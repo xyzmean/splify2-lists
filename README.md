@@ -81,13 +81,13 @@ python3 build.py     # зависимостей нет, только Python 3.8+
   "generated_at": "2026-09-08T20:46:14Z",
   "base_url": "https://raw.githubusercontent.com/<владелец>/splify2-lists/main/lists",
   "categories": [                        // списки ПОДСЕТЕЙ
-    { "id": "example", "name_ru": "Пример", "file": "example.lst",
-      "count": 1, "default_on": false },
     { "id": "itdoginfo:telegram", "name_ru": "Telegram", "file": "itdoginfo/telegram.srs.lst",
       "format": "srs", "tag": "2026-09-07_14-23",
       "url": "https://github.com/itdoginfo/allow-domains/releases/download/2026-09-07_14-23/telegram.srs" }
   ],
   "domain_lists": [                      // списки ДОМЕНОВ
+    { "id": "mydyson", "kind": "domains", "name_ru": "MyDyson",
+      "file": "mydyson.lst", "count": 1, "default_on": false },
     { "id": "svc_itdoginfo_telegram", "kind": "domains", "name_ru": "Telegram",
       "file": "itdoginfo/domains/telegram.srs.lst", "same_as_ip": ["itdoginfo:telegram"],
       "format": "srs", "url": "…", "tag": "…" }
