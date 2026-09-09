@@ -1,24 +1,8 @@
 {
-  "version": "2026-09-08_22-01",
-  "generated_at": "2026-09-08T22:01:19Z",
+  "version": "2026-09-09_15-43",
+  "generated_at": "2026-09-09T15:43:15Z",
   "base_url": "https://raw.githubusercontent.com/xyzmean/splify2-lists/main/lists",
   "categories": [
-    {
-      "id": "example",
-      "name_ru": "Пример (свой список)",
-      "file": "example.lst",
-      "count": 1,
-      "default_on": false,
-      "description_ru": "Файл-образец: удалите его или замените своими записями."
-    },
-    {
-      "id": "example_asn",
-      "name_ru": "Пример (список по номеру AS)",
-      "file": "example_asn.asn.lst",
-      "count": 6,
-      "default_on": false,
-      "description_ru": "Файл-образец: подсети RIPE NCC — их немного, и файл видно целиком."
-    },
     {
       "id": "itdoginfo:cloudflare",
       "name_ru": "Cloudflare",
@@ -352,16 +336,13 @@
   ],
   "domain_lists": [
     {
-      "id": "svc_example",
-      "name_ru": "Пример (свой список)",
-      "file": "example.lst",
-      "count": 2,
+      "id": "mydyson",
+      "name_ru": "MyDyson",
+      "file": "mydyson.lst",
+      "count": 1,
       "default_on": false,
-      "description_ru": "Файл-образец: удалите его или замените своими записями.",
-      "kind": "domains",
-      "same_as_ip": [
-        "example"
-      ]
+      "description_ru": "Приложение MyDyson и сайт Dyson — из РФ не открываются",
+      "kind": "domains"
     },
     {
       "id": "itdoginfo:anime",
